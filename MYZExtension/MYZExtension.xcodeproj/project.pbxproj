@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DADE0C801F8F01E00044B828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0C7F1F8F01E00044B828 /* AppDelegate.m */; };
+		DADE0C831F8F01E00044B828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0C821F8F01E00044B828 /* ViewController.m */; };
+		DADE0C861F8F01E00044B828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE0C841F8F01E00044B828 /* Main.storyboard */; };
+		DADE0C881F8F01E00044B828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADE0C871F8F01E00044B828 /* Assets.xcassets */; };
+		DADE0C8B1F8F01E00044B828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE0C891F8F01E00044B828 /* LaunchScreen.storyboard */; };
+		DADE0C8E1F8F01E00044B828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0C8D1F8F01E00044B828 /* main.m */; };
+		DADE0C9B1F8F02240044B828 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADE0C9A1F8F02240044B828 /* NotificationCenter.framework */; };
+		DADE0C9F1F8F02240044B828 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0C9E1F8F02240044B828 /* TodayViewController.m */; };
+		DADE0CA21F8F02240044B828 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE0CA01F8F02240044B828 /* MainInterface.storyboard */; };
+		DADE0CA61F8F02240044B828 /* MYZTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DADE0C981F8F02240044B828 /* MYZTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DADE0CB41F8F72CB0044B828 /* MYZTodayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0CB31F8F72CB0044B828 /* MYZTodayDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DADE0CA41F8F02240044B828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DADE0C731F8F01E00044B828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADE0C971F8F02240044B828;
+			remoteInfo = MYZTodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DADE0CAA1F8F02240044B828 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DADE0CA61F8F02240044B828 /* MYZTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DADE0C7B1F8F01E00044B828 /* MYZExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYZExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADE0C7E1F8F01E00044B828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DADE0C7F1F8F01E00044B828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DADE0C811F8F01E00044B828 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DADE0C821F8F01E00044B828 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DADE0C851F8F01E00044B828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DADE0C871F8F01E00044B828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DADE0C8A1F8F01E00044B828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DADE0C8C1F8F01E00044B828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADE0C8D1F8F01E00044B828 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DADE0C981F8F02240044B828 /* MYZTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MYZTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADE0C9A1F8F02240044B828 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		DADE0C9D1F8F02240044B828 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		DADE0C9E1F8F02240044B828 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		DADE0CA11F8F02240044B828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DADE0CA31F8F02240044B828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADE0CB01F8F71B90044B828 /* MYZExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MYZExtension.entitlements; sourceTree = "<group>"; };
+		DADE0CB11F8F71D80044B828 /* MYZTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MYZTodayExtension.entitlements; sourceTree = "<group>"; };
+		DADE0CB21F8F72CB0044B828 /* MYZTodayDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYZTodayDetailViewController.h; sourceTree = "<group>"; };
+		DADE0CB31F8F72CB0044B828 /* MYZTodayDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYZTodayDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DADE0C781F8F01E00044B828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADE0C951F8F02240044B828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE0C9B1F8F02240044B828 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DADE0C721F8F01E00044B828 = {
+			isa = PBXGroup;
+			children = (
+				DADE0C7D1F8F01E00044B828 /* MYZExtension */,
+				DADE0C9C1F8F02240044B828 /* MYZTodayExtension */,
+				DADE0C991F8F02240044B828 /* Frameworks */,
+				DADE0C7C1F8F01E00044B828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DADE0C7C1F8F01E00044B828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DADE0C7B1F8F01E00044B828 /* MYZExtension.app */,
+				DADE0C981F8F02240044B828 /* MYZTodayExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DADE0C7D1F8F01E00044B828 /* MYZExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DADE0CB01F8F71B90044B828 /* MYZExtension.entitlements */,
+				DADE0C7E1F8F01E00044B828 /* AppDelegate.h */,
+				DADE0C7F1F8F01E00044B828 /* AppDelegate.m */,
+				DADE0C811F8F01E00044B828 /* ViewController.h */,
+				DADE0C821F8F01E00044B828 /* ViewController.m */,
+				DADE0CB21F8F72CB0044B828 /* MYZTodayDetailViewController.h */,
+				DADE0CB31F8F72CB0044B828 /* MYZTodayDetailViewController.m */,
+				DADE0C841F8F01E00044B828 /* Main.storyboard */,
+				DADE0C871F8F01E00044B828 /* Assets.xcassets */,
+				DADE0C891F8F01E00044B828 /* LaunchScreen.storyboard */,
+				DADE0C8C1F8F01E00044B828 /* Info.plist */,
+				DADE0C8D1F8F01E00044B828 /* main.m */,
+			);
+			path = MYZExtension;
+			sourceTree = "<group>";
+		};
+		DADE0C991F8F02240044B828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DADE0C9A1F8F02240044B828 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DADE0C9C1F8F02240044B828 /* MYZTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DADE0CB11F8F71D80044B828 /* MYZTodayExtension.entitlements */,
+				DADE0C9D1F8F02240044B828 /* TodayViewController.h */,
+				DADE0C9E1F8F02240044B828 /* TodayViewController.m */,
+				DADE0CA01F8F02240044B828 /* MainInterface.storyboard */,
+				DADE0CA31F8F02240044B828 /* Info.plist */,
+			);
+			path = MYZTodayExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DADE0C7A1F8F01E00044B828 /* MYZExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADE0C911F8F01E00044B828 /* Build configuration list for PBXNativeTarget "MYZExtension" */;
+			buildPhases = (
+				DADE0C771F8F01E00044B828 /* Sources */,
+				DADE0C781F8F01E00044B828 /* Frameworks */,
+				DADE0C791F8F01E00044B828 /* Resources */,
+				DADE0CAA1F8F02240044B828 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DADE0CA51F8F02240044B828 /* PBXTargetDependency */,
+			);
+			name = MYZExtension;
+			productName = MYZExtension;
+			productReference = DADE0C7B1F8F01E00044B828 /* MYZExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DADE0C971F8F02240044B828 /* MYZTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADE0CA71F8F02240044B828 /* Build configuration list for PBXNativeTarget "MYZTodayExtension" */;
+			buildPhases = (
+				DADE0C941F8F02240044B828 /* Sources */,
+				DADE0C951F8F02240044B828 /* Frameworks */,
+				DADE0C961F8F02240044B828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYZTodayExtension;
+			productName = MYZTodayExtension;
+			productReference = DADE0C981F8F02240044B828 /* MYZTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DADE0C731F8F01E00044B828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = myz;
+				TargetAttributes = {
+					DADE0C7A1F8F01E00044B828 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					DADE0C971F8F02240044B828 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DADE0C761F8F01E00044B828 /* Build configuration list for PBXProject "MYZExtension" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DADE0C721F8F01E00044B828;
+			productRefGroup = DADE0C7C1F8F01E00044B828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DADE0C7A1F8F01E00044B828 /* MYZExtension */,
+				DADE0C971F8F02240044B828 /* MYZTodayExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DADE0C791F8F01E00044B828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE0C8B1F8F01E00044B828 /* LaunchScreen.storyboard in Resources */,
+				DADE0C881F8F01E00044B828 /* Assets.xcassets in Resources */,
+				DADE0C861F8F01E00044B828 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADE0C961F8F02240044B828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE0CA21F8F02240044B828 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DADE0C771F8F01E00044B828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE0CB41F8F72CB0044B828 /* MYZTodayDetailViewController.m in Sources */,
+				DADE0C831F8F01E00044B828 /* ViewController.m in Sources */,
+				DADE0C8E1F8F01E00044B828 /* main.m in Sources */,
+				DADE0C801F8F01E00044B828 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADE0C941F8F02240044B828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE0C9F1F8F02240044B828 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DADE0CA51F8F02240044B828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DADE0C971F8F02240044B828 /* MYZTodayExtension */;
+			targetProxy = DADE0CA41F8F02240044B828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DADE0C841F8F01E00044B828 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADE0C851F8F01E00044B828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DADE0C891F8F01E00044B828 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADE0C8A1F8F01E00044B828 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DADE0CA01F8F02240044B828 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADE0CA11F8F02240044B828 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DADE0C8F1F8F01E00044B828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DADE0C901F8F01E00044B828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DADE0C921F8F01E00044B828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MYZExtension/MYZExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C645LVUTW4;
+				INFOPLIST_FILE = MYZExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myz.MYZExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DADE0C931F8F01E00044B828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MYZExtension/MYZExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C645LVUTW4;
+				INFOPLIST_FILE = MYZExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myz.MYZExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DADE0CA81F8F02240044B828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MYZTodayExtension/MYZTodayExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C645LVUTW4;
+				INFOPLIST_FILE = MYZTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myz.MYZExtension.MYZTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DADE0CA91F8F02240044B828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MYZTodayExtension/MYZTodayExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C645LVUTW4;
+				INFOPLIST_FILE = MYZTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myz.MYZExtension.MYZTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DADE0C761F8F01E00044B828 /* Build configuration list for PBXProject "MYZExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADE0C8F1F8F01E00044B828 /* Debug */,
+				DADE0C901F8F01E00044B828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADE0C911F8F01E00044B828 /* Build configuration list for PBXNativeTarget "MYZExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADE0C921F8F01E00044B828 /* Debug */,
+				DADE0C931F8F01E00044B828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADE0CA71F8F02240044B828 /* Build configuration list for PBXNativeTarget "MYZTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADE0CA81F8F02240044B828 /* Debug */,
+				DADE0CA91F8F02240044B828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DADE0C731F8F01E00044B828 /* Project object */;
+}
