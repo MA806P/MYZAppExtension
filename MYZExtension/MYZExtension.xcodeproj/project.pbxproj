@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DABCCB371F98B038002345DB /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABCCB361F98B038002345DB /* ShareViewController.m */; };
+		DABCCB3A1F98B038002345DB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABCCB381F98B038002345DB /* MainInterface.storyboard */; };
+		DABCCB3E1F98B038002345DB /* MYZShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DABCCB331F98B038002345DB /* MYZShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DADE0C801F8F01E00044B828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0C7F1F8F01E00044B828 /* AppDelegate.m */; };
 		DADE0C831F8F01E00044B828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0C821F8F01E00044B828 /* ViewController.m */; };
 		DADE0C861F8F01E00044B828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE0C841F8F01E00044B828 /* Main.storyboard */; };
@@ -21,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DABCCB3C1F98B038002345DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DADE0C731F8F01E00044B828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABCCB321F98B038002345DB;
+			remoteInfo = MYZShareExtension;
+		};
 		DADE0CA41F8F02240044B828 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DADE0C731F8F01E00044B828 /* Project object */;
@@ -38,6 +48,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				DADE0CA61F8F02240044B828 /* MYZTodayExtension.appex in Embed App Extensions */,
+				DABCCB3E1F98B038002345DB /* MYZShareExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +56,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DABCCB331F98B038002345DB /* MYZShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MYZShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABCCB351F98B038002345DB /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		DABCCB361F98B038002345DB /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		DABCCB391F98B038002345DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DABCCB3B1F98B038002345DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DADE0C7B1F8F01E00044B828 /* MYZExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYZExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADE0C7E1F8F01E00044B828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DADE0C7F1F8F01E00044B828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +84,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DABCCB301F98B038002345DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DADE0C781F8F01E00044B828 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,11 +109,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DABCCB341F98B038002345DB /* MYZShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DABCCB351F98B038002345DB /* ShareViewController.h */,
+				DABCCB361F98B038002345DB /* ShareViewController.m */,
+				DABCCB381F98B038002345DB /* MainInterface.storyboard */,
+				DABCCB3B1F98B038002345DB /* Info.plist */,
+			);
+			path = MYZShareExtension;
+			sourceTree = "<group>";
+		};
 		DADE0C721F8F01E00044B828 = {
 			isa = PBXGroup;
 			children = (
 				DADE0C7D1F8F01E00044B828 /* MYZExtension */,
 				DADE0C9C1F8F02240044B828 /* MYZTodayExtension */,
+				DABCCB341F98B038002345DB /* MYZShareExtension */,
 				DADE0C991F8F02240044B828 /* Frameworks */,
 				DADE0C7C1F8F01E00044B828 /* Products */,
 			);
@@ -101,6 +136,7 @@
 			children = (
 				DADE0C7B1F8F01E00044B828 /* MYZExtension.app */,
 				DADE0C981F8F02240044B828 /* MYZTodayExtension.appex */,
+				DABCCB331F98B038002345DB /* MYZShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +183,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DABCCB321F98B038002345DB /* MYZShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABCCB411F98B038002345DB /* Build configuration list for PBXNativeTarget "MYZShareExtension" */;
+			buildPhases = (
+				DABCCB2F1F98B038002345DB /* Sources */,
+				DABCCB301F98B038002345DB /* Frameworks */,
+				DABCCB311F98B038002345DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYZShareExtension;
+			productName = MYZShareExtension;
+			productReference = DABCCB331F98B038002345DB /* MYZShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DADE0C7A1F8F01E00044B828 /* MYZExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DADE0C911F8F01E00044B828 /* Build configuration list for PBXNativeTarget "MYZExtension" */;
@@ -160,6 +213,7 @@
 			);
 			dependencies = (
 				DADE0CA51F8F02240044B828 /* PBXTargetDependency */,
+				DABCCB3D1F98B038002345DB /* PBXTargetDependency */,
 			);
 			name = MYZExtension;
 			productName = MYZExtension;
@@ -192,6 +246,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = myz;
 				TargetAttributes = {
+					DABCCB321F98B038002345DB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					DADE0C7A1F8F01E00044B828 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -227,11 +285,20 @@
 			targets = (
 				DADE0C7A1F8F01E00044B828 /* MYZExtension */,
 				DADE0C971F8F02240044B828 /* MYZTodayExtension */,
+				DABCCB321F98B038002345DB /* MYZShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DABCCB311F98B038002345DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABCCB3A1F98B038002345DB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DADE0C791F8F01E00044B828 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +320,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DABCCB2F1F98B038002345DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABCCB371F98B038002345DB /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DADE0C771F8F01E00044B828 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +350,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DABCCB3D1F98B038002345DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABCCB321F98B038002345DB /* MYZShareExtension */;
+			targetProxy = DABCCB3C1F98B038002345DB /* PBXContainerItemProxy */;
+		};
 		DADE0CA51F8F02240044B828 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DADE0C971F8F02240044B828 /* MYZTodayExtension */;
@@ -283,6 +363,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DABCCB381F98B038002345DB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABCCB391F98B038002345DB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		DADE0C841F8F01E00044B828 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -310,6 +398,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DABCCB3F1F98B038002345DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C645LVUTW4;
+				INFOPLIST_FILE = MYZShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myz.MYZExtension.MYZShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DABCCB401F98B038002345DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C645LVUTW4;
+				INFOPLIST_FILE = MYZShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myz.MYZExtension.MYZShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DADE0C8F1F8F01E00044B828 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,6 +593,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DABCCB411F98B038002345DB /* Build configuration list for PBXNativeTarget "MYZShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABCCB3F1F98B038002345DB /* Debug */,
+				DABCCB401F98B038002345DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DADE0C761F8F01E00044B828 /* Build configuration list for PBXProject "MYZExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
