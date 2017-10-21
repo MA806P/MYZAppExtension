@@ -14,8 +14,19 @@
 
 @implementation ShareViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSLog(@"********* viewDidLoad");
+//    [self.textView resignFirstResponder];
+//    UIViewController * vc = [[UIViewController alloc] init];
+//    vc.view.backgroundColor = [UIColor redColor];
+//    [self presentViewController:vc animated:YES completion:nil];
+}
+
 - (BOOL)isContentValid {
     // Do validation of contentText and/or NSExtensionContext attachments here
+    NSLog(@"*********isContentValid");
     return YES;
 }
 
@@ -24,10 +35,18 @@
     
     // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
     [self.extensionContext completeRequestReturningItems:@[] completionHandler:nil];
+    NSLog(@"************didSelectPost");
 }
 
 - (NSArray *)configurationItems {
     // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
+    
+//    SLComposeSheetConfigurationItem * item= [[SLComposeSheetConfigurationItem alloc] init];
+//    item.title = @"zhishiyinweizai renqunzhong ";
+//    item.value = @"yes";
+    
+    
+    NSLog(@"**********configurationItems");
     return @[];
 }
 
