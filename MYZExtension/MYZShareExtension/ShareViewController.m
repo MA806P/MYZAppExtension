@@ -17,16 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"********* viewDidLoad");
-//    [self.textView resignFirstResponder];
-//    UIViewController * vc = [[UIViewController alloc] init];
-//    vc.view.backgroundColor = [UIColor redColor];
-//    [self presentViewController:vc animated:YES completion:nil];
+    self.title = @"MYZShare";
+    
 }
 
 - (BOOL)isContentValid {
     // Do validation of contentText and/or NSExtensionContext attachments here
-    NSLog(@"*********isContentValid");
+    
     return YES;
 }
 
@@ -34,8 +31,62 @@
     // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
     
     // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
-    [self.extensionContext completeRequestReturningItems:@[] completionHandler:nil];
-    NSLog(@"************didSelectPost");
+    
+    //public.jpeg
+    //public.url
+    //public.plain-text
+    
+    NSMutableArray * shareContentArray = [NSMutableArray array];
+    
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.myzShareGroup"];
+    NSMutableArray * oldShareData = [userDefaults objectForKey:@"ShareGroup"];
+    if ([oldShareData isKindOfClass:[NSArray class]] && oldShareData.count > 0) {
+        [shareContentArray addObjectsFromArray:oldShareData];
+    }
+    
+    
+    __weak typeof(self) weakSelf = self;
+    [self.extensionContext.inputItems enumerateObjectsUsingBlock:^(NSExtensionItem * _Nonnull extItem, NSUInteger idx, BOOL * _Nonnull stop) {
+        [extItem.attachments enumerateObjectsUsingBlock:^(NSItemProvider * _Nonnull itemProvider, NSUInteger idx, BOOL * _Nonnull stop) {
+            if ([itemProvider hasItemConformingToTypeIdentifier:@"public.url"]) {
+                [itemProvider loadItemForTypeIdentifier:@"public.url"
+                                                options:nil
+                                      completionHandler:^(NSURL *  _Nullable item, NSError * _Null_unspecified error) {
+                                          //NSLog(@"url === %@", item);
+                                          if (item) {
+                                              NSDictionary * urlDict = @{@"type":@"share_url", @"title":weakSelf.textView.text, @"content":item.absoluteString};
+                                              [shareContentArray addObject:urlDict];
+                                              
+                                              NSUserDefaults *shareUserDefault = [[NSUserDefaults alloc] initWithSuiteName:@"group.myzShareGroup"];
+                                              [shareUserDefault setValue:shareContentArray forKey:@"ShareGroup"];
+                                          }
+                                      }];
+
+            } else if ([itemProvider hasItemConformingToTypeIdentifier:@"public.jpeg"]) {
+
+                [itemProvider loadItemForTypeIdentifier:@"public.jpeg"
+                                                options:nil
+                                      completionHandler:^(NSData *  _Nullable item, NSError * _Null_unspecified error) {
+
+                                          //NSLog(@"jpeg === %@", item);
+                                          
+                                          if (item) {
+                                              NSDictionary * imageDict = @{@"type":@"share_image", @"title":weakSelf.textView.text, @"content":@"", @"image_data":item};
+                                              [shareContentArray addObject:imageDict];
+                                              
+                                              NSUserDefaults *shareUserDefault = [[NSUserDefaults alloc] initWithSuiteName:@"group.myzShareGroup"];
+                                              [shareUserDefault setValue:shareContentArray forKey:@"ShareGroup"];
+                                          }
+                                          
+                                      }];
+            }
+
+        }];
+
+    }];
+    
+    [self.extensionContext completeRequestReturningItems:self.extensionContext.inputItems completionHandler:nil];
+    
 }
 
 - (NSArray *)configurationItems {
@@ -45,8 +96,6 @@
 //    item.title = @"zhishiyinweizai renqunzhong ";
 //    item.value = @"yes";
     
-    
-    NSLog(@"**********configurationItems");
     return @[];
 }
 

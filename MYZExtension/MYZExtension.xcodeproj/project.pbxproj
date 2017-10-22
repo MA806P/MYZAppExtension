@@ -10,6 +10,7 @@
 		DABCCB371F98B038002345DB /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABCCB361F98B038002345DB /* ShareViewController.m */; };
 		DABCCB3A1F98B038002345DB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABCCB381F98B038002345DB /* MainInterface.storyboard */; };
 		DABCCB3E1F98B038002345DB /* MYZShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DABCCB331F98B038002345DB /* MYZShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAD894DB1F9C8AED00CB8FAD /* MYZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD894DA1F9C8AED00CB8FAD /* MYZShareViewController.m */; };
 		DADE0C801F8F01E00044B828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0C7F1F8F01E00044B828 /* AppDelegate.m */; };
 		DADE0C831F8F01E00044B828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE0C821F8F01E00044B828 /* ViewController.m */; };
 		DADE0C861F8F01E00044B828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE0C841F8F01E00044B828 /* Main.storyboard */; };
@@ -61,6 +62,9 @@
 		DABCCB361F98B038002345DB /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		DABCCB391F98B038002345DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DABCCB3B1F98B038002345DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD894D81F9C88E800CB8FAD /* MYZShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MYZShareExtension.entitlements; sourceTree = "<group>"; };
+		DAD894D91F9C8AED00CB8FAD /* MYZShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYZShareViewController.h; sourceTree = "<group>"; };
+		DAD894DA1F9C8AED00CB8FAD /* MYZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYZShareViewController.m; sourceTree = "<group>"; };
 		DADE0C7B1F8F01E00044B828 /* MYZExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYZExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADE0C7E1F8F01E00044B828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DADE0C7F1F8F01E00044B828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 		DABCCB341F98B038002345DB /* MYZShareExtension */ = {
 			isa = PBXGroup;
 			children = (
+				DAD894D81F9C88E800CB8FAD /* MYZShareExtension.entitlements */,
 				DABCCB351F98B038002345DB /* ShareViewController.h */,
 				DABCCB361F98B038002345DB /* ShareViewController.m */,
 				DABCCB381F98B038002345DB /* MainInterface.storyboard */,
@@ -151,6 +156,8 @@
 				DADE0C821F8F01E00044B828 /* ViewController.m */,
 				DADE0CB21F8F72CB0044B828 /* MYZTodayDetailViewController.h */,
 				DADE0CB31F8F72CB0044B828 /* MYZTodayDetailViewController.m */,
+				DAD894D91F9C8AED00CB8FAD /* MYZShareViewController.h */,
+				DAD894DA1F9C8AED00CB8FAD /* MYZShareViewController.m */,
 				DADE0C841F8F01E00044B828 /* Main.storyboard */,
 				DADE0C871F8F01E00044B828 /* Assets.xcassets */,
 				DADE0C891F8F01E00044B828 /* LaunchScreen.storyboard */,
@@ -249,6 +256,11 @@
 					DABCCB321F98B038002345DB = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					DADE0C7A1F8F01E00044B828 = {
 						CreatedOnToolsVersion = 9.0;
@@ -332,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD894DB1F9C8AED00CB8FAD /* MYZShareViewController.m in Sources */,
 				DADE0CB41F8F72CB0044B828 /* MYZTodayDetailViewController.m in Sources */,
 				DADE0C831F8F01E00044B828 /* ViewController.m in Sources */,
 				DADE0C8E1F8F01E00044B828 /* main.m in Sources */,
@@ -401,6 +414,7 @@
 		DABCCB3F1F98B038002345DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MYZShareExtension/MYZShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = MYZShareExtension/Info.plist;
@@ -415,6 +429,7 @@
 		DABCCB401F98B038002345DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MYZShareExtension/MYZShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C645LVUTW4;
 				INFOPLIST_FILE = MYZShareExtension/Info.plist;

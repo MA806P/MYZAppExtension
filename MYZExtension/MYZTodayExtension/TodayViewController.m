@@ -63,9 +63,6 @@ static CGFloat const kRowHeiht = 110;
  */
 - (void)widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode)activeDisplayMode withMaximumSize:(CGSize)maxSize {
     
-    NSLog(@"widgetActiveDisplayModeDidChange MaximumSize --- %@", NSStringFromCGSize(maxSize));
-    
-    
     if(activeDisplayMode == NCWidgetDisplayModeCompact) {
         self.preferredContentSize = CGSizeMake(0, 110);
     } else {
@@ -76,8 +73,6 @@ static CGFloat const kRowHeiht = 110;
 
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
-    
-    NSLog(@"widgetPerformUpdateWithCompletionHandler");
     
     // Perform any setup necessary in order to update the view.
     

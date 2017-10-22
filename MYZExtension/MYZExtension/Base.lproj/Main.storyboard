@@ -20,6 +20,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="bu4-Tf-4kL" kind="relationship" relationship="viewControllers" id="Nv7-NY-d96"/>
+                        <segue destination="GHQ-Wu-ebO" kind="relationship" relationship="viewControllers" id="xnS-zw-c57"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih5-TG-vWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,6 +65,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAf-19-ydE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="783" y="-276"/>
+        </scene>
+        <!--Share-->
+        <scene sceneID="09M-X1-55v">
+            <objects>
+                <navigationController id="GHQ-Wu-ebO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Share" id="qTZ-7t-ndv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Tn-Dz-5xa">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8JI-MZ-av3" kind="relationship" relationship="rootViewController" id="CeI-GM-dPa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zok-an-FC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="679"/>
+        </scene>
+        <!--ShareExtension-->
+        <scene sceneID="7Eb-Wh-fRq">
+            <objects>
+                <viewController id="8JI-MZ-av3" customClass="MYZShareViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ko5-Jp-fyh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="WWh-fn-UZy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ShareExtension" id="ZPZ-UM-OhJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kfj-XC-gRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="660"/>
         </scene>
     </scenes>
 </document>
