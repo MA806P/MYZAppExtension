@@ -10,6 +10,6 @@ Demo about app extension
 
 ### Share Extension
 
-![](https://github.com/MA806P/MYZAppExtension/blob/master/screenshot/shre_extension.gif)
+![](https://github.com/MA806P/MYZAppExtension/blob/master/screenshot/share_extension.gif)
 
 
