@@ -1,8 +1,8 @@
 # MYZAppExtension
-Demo about app extension
+Demo about app extension.
 
 ### Today Extension
-
+widget
 ![](https://github.com/MA806P/MYZAppExtension/blob/master/screenshot/today_extension.gif)
 
 
