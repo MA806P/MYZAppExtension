@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //this show one the view pop after clik the share button
     self.title = @"MYZShare";
     
 }
@@ -67,7 +68,6 @@
                 [itemProvider loadItemForTypeIdentifier:@"public.jpeg"
                                                 options:nil
                                       completionHandler:^(NSData *  _Nullable item, NSError * _Null_unspecified error) {
-
                                           //NSLog(@"jpeg === %@", item);
                                           
                                           if (item) {
